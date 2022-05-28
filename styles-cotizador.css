@@ -80,6 +80,7 @@
 .mesas input {
     height: 40px;
     font-size: 1.2rem;
+    width: 60px;
 }
 
 .mesas button {
