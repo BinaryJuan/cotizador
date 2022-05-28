@@ -1,0 +1,159 @@
+#cotizador {
+    width: 50%;
+    text-align: center;
+    border: 1px solid green;
+    margin: 0 auto;
+}
+
+#cotizador input:focus {
+    outline: none;
+    border: 2px solid #aaa829;
+}
+
+.titleCotizador {
+    font-size: 1.7rem;
+}
+
+.cText {
+    width: 70%;
+    margin: 0 auto 15px auto;
+    font-style: italic;
+}
+
+#personas {
+    width: 70px;
+    height: 30px;
+    font-size: 1.2rem;
+}
+
+.cotizarButton {
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 400;
+    width: 200px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: .2rem;
+    letter-spacing: 2px;
+    padding: 8px 0px;
+    background-color: #aaa829;
+    border: none;
+}
+
+.cotizarButton:active {
+    background-color: #949225;
+}
+
+.cardCotizador {
+    background-color: #aaa829;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 0 15px 0;
+    border-radius: .2rem;
+    color: white;
+}
+
+.cardCotizador h2 {
+    background-color:rgb(145, 143, 34);
+    padding: 15px 0;
+}
+
+.cardCotizador h4 {
+    font-size: 1.3rem;
+}
+
+.cardCotizador li {
+    font-size: 1.1rem;
+}
+
+.cardCotizador ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mesas {
+    display: flex;
+    margin: 15px 0;
+    justify-content: center;
+}
+
+.mesas input {
+    height: 40px;
+    font-size: 1.2rem;
+}
+
+.mesas button {
+    margin: 0 10px;
+    font-size: .9rem;
+    color: white;
+    width: 150px;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    letter-spacing: 2px;
+    padding: 8px 0px;
+    background-color: #aaa829;
+    border: none;
+    height: 45px;
+}
+
+.mesas button:active {
+    background-color: #949225;
+}
+
+#total {
+    background-color: #aaa829;
+    width: fit-content;
+    padding: 10px 20px;
+    color: white;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border-radius: .2rem;
+    font-size: 1.5rem;
+}
+
+.actionButtons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.actionButtons button {
+    margin: 0 15px;
+    font-size: .9rem;
+    color: white;
+    width: 150px;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    letter-spacing: 2px;
+    padding: 8px 0px;
+    background-color: #aaa829;
+    border: none;
+    height: 45px;
+}
+
+.infoCotizacion {
+    background-color: #aaa829;
+    padding: 30px 0;
+    color: white;
+    font-family: "Raleway", sans-serif;
+}
+
+#restricciones {
+    margin: 0 auto;
+}
+
+#restricciones p {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#pagos ul {
+    list-style: none;
+    padding: 0;
+}
+
+@media (max-width: 850px) {
+    #cotizador {
+        width: 90%;
+    }
+}

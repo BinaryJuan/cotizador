@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cotizador</title>
+        <link rel="stylesheet" href="styles-cotizador.css">
+    </head>
+    <body>
+        <div id="cotizador">
+            <h2 class="titleCotizador">Cotizador</h2>
+            <p class="cText">
+                Por favor, seleccione la cantidad de personas.
+                El mínimo es de 10 personas, y el máximo de 220.
+            </p>
+            <input type="number" id="personas" min="10" max="220" />
+            <button onclick="cotizar()" class="cotizarButton">Cotizar</button>
+            <p id="mensaje"></p>
+            <div id="informacion"></div>
+            <div class="mesas">
+                <input type="number" id="mesasCuatro" min="1" max="50" />
+                <button onclick="sumarMesas(document.getElementById('mesasCuatro').value, 4)" id="botonMesasCuatro">Agregar mesa/s de 4</button>
+                <input type="number" id="mesasOcho" min="1" max="25" />
+                <button onclick="sumarMesas(document.getElementById('mesasOcho').value, 8)" id="botonMesasOcho">Agregar mesa/s de 8</button>
+            </div>
+            <h3 id="total">Total de $0</h3>
+            <div class="actionButtons">
+                <button id="resetButton" onclick=reiniciar()>Reiniciar</button>
+                <button id='wspButton'>Consultar</button>
+            </div>
+            <div class="infoCotizacion">
+                <div id="restricciones">
+                    <h3>RESTRICCIONES</h3>
+                    <p>
+                        Este tarifario no sustituye una cotización detallada de servicios.
+                        Precios ya incluyen IVA. Si necesita comprobante de crédito fiscal
+                        debe ser solicitado con anterioridad al pago. Se requiere un
+                        anticipo mínimo del 25% del precio total para reservar la fecha.
+                    </p>
+                </div>
+                <br>
+                <div id="pagos">
+                    <h3>MEDIOS DE PAGO</h3>
+                    <ul>
+                        <li>Efectivo</li>
+                        <li>Transferencia: Banco Agrícola</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="cotizador.js"></script> 
+    </body>
+</html>
